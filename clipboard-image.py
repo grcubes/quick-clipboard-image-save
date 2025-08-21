@@ -25,5 +25,3 @@ else:
     save_path = os.path.join(target_dir, "clipboard.png")
     img.save(save_path, "PNG")
     print(f"Saved clipboard image to {save_path}")
-
-input()
