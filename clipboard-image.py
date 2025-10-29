@@ -21,9 +21,10 @@ if img is None:
     print("No image found in clipboard.")
 else:
     delete_previous_images()
-    
-    save_path = os.path.join(target_dir, "clipboard.png")
-    img.save(save_path, "PNG")
-    print(f"Saved clipboard image to {save_path}")
+    save_path = os.path.join(target_dir, "clipboard")
 
-input()
+    img.save(f"{save_path}.png", "PNG")
+    print(f"Saved clipboard image to {save_path}")
+    
+    img.save(f"{save_path}.jpg", "JPEG")
+    print(f"Saved clipboard image to {save_path}")
