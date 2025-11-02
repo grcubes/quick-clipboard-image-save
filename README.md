@@ -21,9 +21,3 @@ If you want to have this script accessible from the Taskbar or Start Menu, there
    
 ### 3. Pin it
    Right-click on the new shortcut, click "Show More Options", and finally pin it to the Taskbar or Start Menu.
-
-
-
-## Note
-
-ChatGPT assisted with the debugging of the script.
