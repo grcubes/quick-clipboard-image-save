@@ -20,11 +20,15 @@ img = ImageGrab.grabclipboard()
 if img is None:
     print("No image found in clipboard.")
 else:
+    print("\n")
     delete_previous_images()
     save_path = os.path.join(target_dir, "clipboard")
 
     img.save(f"{save_path}.png", "PNG")
     print(f"Saved clipboard image to {save_path}")
     
-    img.save(f"{save_path}.jpg", "JPEG")
-    print(f"Saved clipboard image to {save_path}")
+    try:
+        img.save(f"{save_path}.jpg", "JPEG")
+        print(f"Saved clipboard image to {save_path}")
+    except OSError:
+        print("OSError, skipping JPG...")
