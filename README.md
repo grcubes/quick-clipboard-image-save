@@ -13,11 +13,11 @@ If you want to have this script accessible from the Taskbar or Start Menu, there
 
    
 ### 2. Change the TARGET
-   Open the shortcut's properties, and change the TARGET. It should show something like "C:/Users/\[name]/Programs/clipboard-image.bat".
+   Open the shortcut's properties, and change the TARGET. It should show something like "C:/Users/\[your_path]/clipboard-image.bat".
    What you should do is write "cmd.exe /c " or "python " at the beginning of the TARGET. It should say one of the following:
-   > "cmd.exe c/ C:/Users/\[name]/Programs/clipboard-image.bat".
+   > "cmd.exe c/ C:/Users/\[your_path]/clipboard-image.bat".
    > <br>
-   >  "python C:/Users/\[name]/Programs/clipboard-image.bat".
+   >  "python C:/Users/\[your_path]/clipboard-image.bat".
 
    If your shortcut aims to the Python file, instead of the Batch file, you should write "python " at the beginning of the TARGET instead of "cmd.exe c/ ".
 
